@@ -1,0 +1,28 @@
+{
+  "name": "site-surveyor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Phone web app to survey land: GPS corners, area, site plan PDF and CAD (DXF) export.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node build.mjs --serve",
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:e2e": "node test/e2e.mjs",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "firebase": "^13.1.0",
+    "jspdf": "^4.2.1",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1",
+    "sharp": "^0.35.5"
+  },
+  "license": "UNLICENSED"
+}
